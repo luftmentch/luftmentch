@@ -1,75 +1,359 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="style.css">i
-<style>
-  img {
-    height: 1000px;
-    padding:0%;
-  }
-</style>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <header>
-
-    <img src="https://jordandagraca.weebly.com/uploads/1/2/0/0/120091716/omnifood_1.png">
-  </header>
+    <style>
+        * {
+          margin: 0px;
+        }
+      
+        li {
+          margin: 0px 0px 7px;
+        }
+      
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+      
+        footer {
+          text-align: center;
+          background-image: linear-gradient(to right, #000000, #000000);
+        }
+      
+        .col1 {
+          padding: 0px 15px;
+        }
+      
+        .row {
+          display: flex;
+          justify-content: space-around;
+        }
+      
+        .header {
+          padding: 30px;
+          background-image: url(https://cdnb.artstation.com/p/assets/images/images/014/665/033/original/yargon-kerman-webp-net-gifmaker-39.gif?1544919451);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      
+        .footerlogoimg {
+          width: 70px;
+        }
+      
+        .footerlogolink {
+          margin: 280px;
+        }
+      
+        .footerp,
+        .footerli {
+          color: white;
+          transition: all 0.34s;
+        }
+      
+        .breakfooter {
+          color: aqua
+        }
+      
+        .headerul {
+          display: flex;
+          justify-content: center;
+        }
+      
+        .headerli {
+          background-color: white;
+          border-radius: 30px;
+          padding: 10px 15px;
+          margin-left: 20px;
+          margin-right: 20px;
+          list-style: none;
+          font-family: Georgia, 'Times New Roman', Times, serif
+        }
+      
+        .headerli:hover {
+          text-decoration: none;
+          color: red;
+          cursor: pointer;
+          background-color: black;
+          transition: all 0.4s;
+        }
+      
+        .footerli {
+          padding: 5px;
+        }
+      
+        .footerli:hover {
+          color: red;
+          cursor: pointer;
+          transition: all 0.34s;
+          text-decoration: none;
+        }
+      
+        .footerp {
+          padding-bottom: 15px;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+      
+        .footerp:hover {
+          color: red;
+          cursor: pointer;
+          transition: all 0.34s;
+          text-decoration: none;
+        }
+      
+        .flex-container {
+          display: flex;
+          flex-wrap: nowrap;
+          background-color: white;
+          justify-content: center;
+        }
+      
+        .flex-container>div {
+          background-color: white;
+          width: 190px;
+          margin: 10px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 15px;
+          border-style: solid;
+          align-item: center
+        }
+      
+        .dropbtn {
+          background-color: white;
+          color: black;
+          padding: 15px;
+          font-size: 15px;
+          border: none;
+        }
+      
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+      
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white;
+          min-width: 150px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
+      
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+      
+        .dropdown-content a:hover {
+          background-color: white;
+        }
+      
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      
+        .dropdown:hover .dropbtn {
+          background-color: white;
+        }
+      </style>
+      
+      <body>
+        <header class="header">
+          <ul class="headerul">
+            <li class="headerli">Popular</li>
+            <li class="headerli">Recommended</li>
+            <li class="headerli">New</li>
+            <li class="headerli">More Games</li>
+            <li class="headerli">Sale</li>
+            <li class="headerli">FAQ</li>
+          </ul>
+        </header>
+      
+        <hr>
+        <ul class="breadcrumb">
+          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="https://divineshop.vn/index.php?route=common/home" itemprop="url" style="color: #7b7b7b;"><span itemprop="title"><i class="fa fa-home"></i></span></a>
+          </li>
+          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="https://divineshop.vn/naraka-bladepoint" itemprop="url" style="color: black; font-size: large"><span itemprop="title">NARAKA: BLADEPOINT</span></a>
+          </li>
+        </ul>
+      
+        <br>
+      
+        <div class="flex_img_text">
+          <img src="https://steamcdn-a.akamaihd.net/steam/apps/1203220/header.jpg" title="NARAKA: BLADEPOINT" alt="NARAKA: BLADEPOINT" class="slide-product-big check_img_errs">
+      
+          <br>
+      
+          <div class="sp-info-top">
+            <div class="sp-info-top-item ">
+              <div class="sp-info-top-item-icon"><img style="width: 20px;" src="https://static.thenounproject.com/png/45136-200.png"></div>
+              <div class="text-wrap">
+                <div class="text">Mã sản phẩm</div>
+                <div class="text-1">acc naraka</div>
+              </div>
+              <div class="sp-price-text">Giá sản phẩm</div>
+      
+              <div class="sp-price-old">360.000 VNĐ</div>
+            </div>
+            <div class="sp-info-top-item ">
+              <div class="sp-info-top-item-icon"><img style="width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/2048px-Icon-round-Question_mark.svg.png"></div>
+              <div class="text-wrap">
+                <div class="text">Tình trạng</div>
+                <span style="color:#f00; font-weight:bold;">Hết hàng</span>
+              </div>
+      
+            </div>
+      
+            <div class="sp-info-top-item">
+              <div class="sp-info-top-item-icon"><img style="width: 25px;" src="data:image/png;base64,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"></div>
+              <div class="text-wrap">
+                <div class="text">Link gốc</div>
+      
+                <div class="text-1">Sản phẩm</div>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+        </div>
+        <br>
+        <hr>
+      
+        <div class="more-view-description" style="max-height: 100%;">
+          <hr style="border: 0.5px solid #aaa4a4;">
+          <br>
+      
+          <div class="list-title">
+            <div class="fontSize-title">Chi tiết sản phẩm</div>
+          </div>
+      
+          <div class="description-container">
+            <p>Tại sự kiện game Battle Royale của E3 2021, nhà phát triển 24 Entertainment đã công bố ngày ra mắt chính thức của tựa game Naraka: Bladepoint là vào 12/8 tới đây. Bên cạnh đó, nhà phát triển cũng tiết lộ thêm rằng trước khi ra mắt chính thức thì siêu phẩm "PUBG kiếm hiệp" sẽ mở cửa bản thử nghiệm beta thêm một lần nữa vào đầu mùa hè này.</p>
+            <br>
+            <p style="text-align:center"><img src="https://divineshop.vn/image/ckeditor/ss_78ffacb5991aea06b4ee636b1c4c816abfb2cbfa.jpg" style="height:400px; width:700px ; display:block ; margin-left:auto ; margin-right:auto"></p>
+            <br>
+            <p style="text-align:justify">Tại màn giới thiệu ở sự kiện E3 2021 vừa qua, chúng ta có thể thấy game đã có thêm nhiều cơ chế chiến đấu mới so với lần mở cửa thử nghiệm đầu tiên. Từ cơ chế dùng móc câu để di chuyển tự do lên tường và trần nhà để tạo thế bất lợi cho kẻ thù cho đến sự ra mắt của vũ khí mới là cây thương, và nhân vật mới Yoto Hime. Đi cùng với đó là những chiêu thức vô cùng ảo diệu để sinh tồn và hạ gục đối thủ trong thế giới võ lâm hiểm ác.</p>
+            <br>
+            <p style="text-align:justify">Dành cho những bạn nào chưa biết thì Naraka: Bladepoint là một tựa game thuộc thể loại Battle Royale. Tuy nhiên, bạn sẽ không nhảy dù từ máy bay xuống rồi loot súng để bắn nhau mà bạn sẽ loot những món vũ khí như đoản kiếm, katana, cung, nỏ và đồ long đao.</p>
+            <br>
+            <p style="text-align:justify">Bên cạnh đó, mỗi một class nhân vật bạn chọn sẽ có một bộ kỹ năng riêng, bao gồm kỹ năng phụ dùng để bổ trợ cho người chơi trong trận đấu như hồi máu, tăng phòng thủ, và chiêu Ulti như hóa hình khổng lồ để lật ngược thế cờ khi giao tranh.</p>
+            <br>
+            <p style="text-align:center"><img src="https://divineshop.vn/image/ckeditor/ss_06b5f6c1f31c3519e51a45f9101da47e161e40c0.jpg" style="height:400px; width:700px ; display:block ; margin-left:auto ; margin-right:auto"></p>
+            <br>
+            <p style="text-align:center">Game cũng sẽ có thính nhưng nó không sẽ không thả rơi từ một chiếc máy bay mà được triệu hồi từ trên trời xuống nhìn khá là ngầu, tuy nhiên thì bạn cần phải loot tiền trên đường đi thì mới có thể mua đồ được.</p>
+          </div>
+          <br>
+      
+          <div class="list-title">
+            <div class="fontSize-title">Cấu hình yêu cầu</div>
+          </div>
+          <div class="row cau-hinh">
+            <div class="col-xs-12">
+              <p></p>
+              <p><br>
+                <strong>Minimum:</strong>
+              </p>
+      
+              <p>&nbsp;</p>
+      
+              <ul>
+                <li><strong>OS:</strong> Windows 10 64-bit</li>
+                <li><strong>Processor:</strong> Intel i5 4th generation or AMD FX 6300 or equivalent</li>
+                <li><strong>Memory:</strong> 8 GB RAM</li>
+                <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1050TI or equivalent</li>
+                <li><strong>DirectX:</strong> Version 11</li>
+                <li><strong>Network:</strong> Broadband Internet connection</li>
+                <li><strong>Storage:</strong> 20 GB available space</li>
+                <li><strong>Additional Notes:</strong> We advise you install the game on an SSD for a more streamlined experience.</li>
+              </ul>
+      
+              <p><br>
+                <strong>Recommended:</strong>
+              </p>
+      
+              <p>&nbsp;</p>
+      
+              <p>&nbsp;</p>
+      
+              <ul>
+                <li><strong>OS:</strong> Windows 10 64-bit</li>
+                <li><strong>Processor:</strong> Intel i7 7th generation or equivalent</li>
+                <li><strong>Memory:</strong> 16 GB RAM</li>
+                <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1060 6G or equivalent</li>
+                <li><strong>DirectX:</strong> Version 11</li>
+                <li><strong>Network:</strong> Broadband Internet connection</li>
+                <li><strong>Storage:</strong> 20 GB available space</li>
+                <li><strong>Additional Notes:</strong> We advise you install the game on an SSD for a more streamlined experience.</li>
+              </ul>
+      
+              <p>&nbsp;</p>
+              <p></p>
+            </div>
+          </div>
+          <br>
+        </div>
+      
+        <footer id="footer">
+          <br>
+          <br>
+          </div class="col2">
+          <a href="" class="footerlogolink">
+            <img class="footerlogoimg" src="https://www.oxfordlearnersdictionaries.com/external/images/footer/instagram.svg">
+          </a>;
+          <a href="" class="footerlogolink">
+            <img class="footerlogoimg" src="https://www.oxfordlearnersdictionaries.com/external/images/footer/twitter.svg" alt="">
+          </a>;
+          <a href="" class="footerlogolink">
+            <img class="footerlogoimg" src="https://www.oxfordlearnersdictionaries.com/external/images/footer/facebook.svg" alt="">
+          </a>
+          </div>
+      
+          <br>
+          <br>
+          <div class="row">
+            <div class="col1">
+              <p class="footerp">More about us</p>
+      
+              <ul>
+                <li class="footerli">Our history</li>
+                <li class="footerli">How we work</li>
+              </ul>
+            </div>
+            <div class="col1">
+              <p class="footerp">Privacy Policy</p>
+              <ul>
+                <li class="footerli">Cookie Policy</li>
+                <li class="footerli">Terms and Conditions</li>
+              </ul>
+            </div>
+            <div class="col1">
+              <p class="footerp">Buy Premium!</p>
+              <ul>
+                <li class="footerli">No ads!</li>
+                <li class="footerli">Faster download!</li>
+              </ul>
+              <br>
+            </div>
+          </div>
+        </footer>
+      </body>
+      
+      </html>
 </body>
-<br>
-<br>
-<h2>Get Food Fast - Not Fast Food</h2>
-<br>
-<hr>
-<br>
-<p> Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
-<br>
-
-<div class="f-grid">
-  <div class="f-grid-col">
-    <div><img style="width: 60px; height:60px; text-align:center;" src="data:image/png;base64,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"></div>
-
-    <h3>UP TO 365DAYS/YEAR</h3>
-    <br>
-    Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
-
-  </div>
-  <div class="f-grid-col">
-    <div><img style="width: 60px; height:60px; text-align:center;" src="https://previews.123rf.com/images/axis213/axis2131809/axis213180900010/110185792-time-icon-clock-icon-vector-time-sign-vector-illustration-flat-design-eps-10.jpg"></div>
-    <h3>READY IN 20 MINS</h3>
-    <br>
-
-    You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-  </div>
-  <div class="f-grid-col">
-    <div><img style="width: 50px; height:50px; text-align:center;" src="https://static.thenounproject.com/png/3569320-200.png"></div>
-    <h3>100% ORGANIC</h3>
-    <BR>
-
-    All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-
-  </div>
-</div>
-<Br>
-
-
-<div class="container">
-  <img style="width: 1900px; height:700px; " src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a3c73c58081761.59ef194a6b4be.png" </div>
-  <br>
-  <hr>
-  <br>
-  <h2>WE`RE ALL HAPPY TO HEAR FROM YOU</h2>
-  <br>
-  <form action="/action_page.php">
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Email</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="lname">How did you find us</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="lname">Newsletter</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="lname">Drop us a line</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <button onclick="myFunction()">Send it !</button>
-  </form>
-
 </html>
